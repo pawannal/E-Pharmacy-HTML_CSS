@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            height: auto;
+            margin: 0%;
+        }
+        header h1{
+            background-color: red;
+            margin: 0%;
+            padding: 20px;
+            text-align: center;
+        }
+        #navigate{
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+        }
+        .menu{
+            margin: 0%;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+        .menu li a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .menu li{
+            padding: 10px;
+            display: inline-block;
+        }
+        .menu li:hover{
+            background-color: rgba(0, 0, 0, 0.7);;
+        }
+        .menu li:nth-child(2):hover #Dropdown_1, .menu li:nth-child(3):hover #Dropdown_2{
+            display: block;
+        }
+        #Dropdown_1, #Dropdown_2{
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            display: none;
+            top: 42.5px;
+            background-color: whitesmoke;
+            padding: 0%;
+        }
+        #Dropdown_1 li, #Dropdown_2 li{
+            display: block;
+        }
+        #Dropdown_1 li:hover, #Dropdown_2 li:hover{
+            background-color: gainsboro;
+        }
+        #Dropdown_1 li a, #Dropdown_2 li a{
+            color: steelblue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header><h1>E-Pharmacy</h1></header>
+    <nav id="navigate">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul id="Dropdown_1">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">old & Cough</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Health-care</a>
+                <ul id="Dropdown_2">
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Skin-care</a></li>
+                    <li><a href="#">Home-care</a></li>
+                    <li><a href="#">Personal-care</a></li>
+                    <li><a href="#">Pet-care</a></li>
+                </ul>
+            </li>
+            <li> 
+                
+                <a href="Sign up.html">Lab Test</a>
+              <!---- <ul id="Dropdown_3">-->
+                
+               </ul>
+            </li>
+        </ul>
+    </nav>
+    <center>
+    <img src="ani5.jpg"/></center>
+</body>
+<center>
+<footer>The Copyright (Amendment) Act, 2012 is the most substantial.</footer></center>
+
+</html>
